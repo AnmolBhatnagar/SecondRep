@@ -7,9 +7,9 @@ public class AppController {
 	AppService service;
 	
 	
-	public AppService getService() {
-		return service;
-	}
+//	public AppService getService() {
+//		return service;
+//	}
 
 	public void setService(AppService service) {
 		this.service = service;

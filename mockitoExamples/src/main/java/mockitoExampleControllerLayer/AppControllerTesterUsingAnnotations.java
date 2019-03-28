@@ -14,17 +14,21 @@ import org.mockito.runners.MockitoJUnitRunner;
 public class AppControllerTesterUsingAnnotations {
 
 	@InjectMocks
-	AppController app=new AppController();
-	
+	public AppController app = new AppController();
+
 	@Mock
-	AppService service;
-	
+	public AppService service;
+
+	public AppControllerTesterUsingAnnotations(final AppController app,
+			final AppService service) {
+		super();
+		this.app = app;
+		this.service = service;
+	}
+
 	@Test
-	public void testPrint()
-	{
+	public void testPrint() {
 		Mockito.when(service.print()).thenReturn(100);
-		
 		Assert.assertEquals(app.print(), 100);
-		
 	}
 }

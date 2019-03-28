@@ -4,9 +4,9 @@ public class CalculatorApplication {
 
 	CalculatorService service;
 
-	public CalculatorService getService() {
-		return service;
-	}
+//	public CalculatorService getService() {
+//		return service;
+//	}
 
 	public void setService(CalculatorService service) {
 		this.service = service;
