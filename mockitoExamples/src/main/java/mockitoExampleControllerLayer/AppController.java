@@ -7,9 +7,9 @@ public class AppController {
 	AppService service;
 	
 	
-//	public AppService getService() {
-//		return service;
-//	}
+	public AppService getService() {
+		return service;
+	}
 
 	public void setService(AppService service) {
 		this.service = service;
@@ -18,5 +18,8 @@ public class AppController {
 	public int print() {
 		System.out.println("controller layer "+service.print());
 		return service.print();
+	}
+	public void output(){
+		System.out.println("This is a sample output");
 	}
 }
