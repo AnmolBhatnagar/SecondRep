@@ -19,4 +19,7 @@ public class AppController {
 		System.out.println("controller layer "+service.print());
 		return service.print();
 	}
+	public void output(){
+		System.out.println("This is a sample output");
+	}
 }
